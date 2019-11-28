@@ -1,0 +1,1134 @@
+/*----------------animation---------------------*/
+/*@keyframes masuperanimation {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(150px);
+    }
+
+    100% {
+        transform: translateX(150px) rotate(30deg);
+    }
+}
+
+
+/*-----------------BODY----------------------------*/
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+    perspective: 800px;
+    font-family: 'Cinzel', serif;
+	min-height: 100vh;
+}
+
+h2{
+	font-size:1.4vw;
+	font-family: 'Cormorant', serif;
+	margin-bottom: 27px;
+	color: #504C4C;
+	color: black;
+}
+
+h3{
+	margin-top: 7vw;
+	margin-left: 2vw;
+	text-align: right;
+	margin-right: 1vw;
+}
+/*------------------Header-------------------------*/
+header {
+	position: relative;
+	top:0;
+	width: 100vw;
+	z-index: 2;
+}
+header nav {
+	background:white;
+	height: 6vw;
+	line-height: 4vw;
+	opacity: 0.8;
+}
+header img {
+	width: 10vw;
+}
+/*------------------Connection-------------------------*/
+#form-holder{
+	/*position: absolute;*/
+	top:0;
+	right:0;
+	width: 9vw;
+}
+
+#form-holder input{
+	border:none;
+	
+}
+
+#form-holder form{
+	
+}
+
+
+/*--------------btn deconnexion------------------------*/
+
+#btnDeconnex:hover{
+	background-color:rgba(193,174,131,76);
+}
+
+#connexion_formulaire{
+	width:5vw;
+	display: flex;
+    flex-flow: column;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    z-index: 1;
+}
+.connexi{
+	border-color: transparent;
+}
+
+.connex{
+	border-color: transparent;
+}
+
+.buttonConn{
+
+}
+/*-----------------Navigation------------------------------*/
+nav {
+	background-color: rgba(255, 255, 255, 0);
+	border-color: transparent;
+	right:0;
+	position: absolute;
+	top: 0;
+    left: 9.75vw;
+	z-index: 0;
+	text-decoration: none;
+	padding: 0 5px;
+
+}
+nav a {
+	flex-grow: 1;
+	text-align: center;
+	padding:1vw 2.25vw;
+	border-radius:0.25vw;
+	color: black;
+	z-index: 1;
+	text-decoration: none;
+	transition: background-color 0.8s linear;
+	
+}
+nav a:hover {
+	background: #968686;
+	min-height: 18px;
+    border-width: 0px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+/*---------------Accueil/je decouvre-----------------------------------*/
+#accueil {
+	
+	min-height: 100vh;
+	background-image: url(https://cache.marieclaire.fr/data/photo/w1000_ci/4x/faire-ses-cosmetiques-maison.jpg);
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+#accueil #logo img{
+	width: 10vw;
+}
+
+#accueil p {
+	margin:0;
+	position: relative;
+	float: left;
+	left: 48%;
+	transform: translate(-45%, 80%);
+	color: #504C4C;
+	font-size: 2vw;
+	text-align: center;
+
+}
+
+a:hover{
+	color:black;
+	background: black;
+	box-shadow: 0 0 5px #968686,0 0 5px #968686,0 0 5px #968686;
+}
+#decouvre{
+    background-color: rgba(0,0,0,0);
+ 	cursor:pointer;
+ 	opacity: 0.7;
+ 	position: absolute;
+	float: left;
+	top: 58%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	cursor:pointer;
+	font-size: 2.8vw;
+ 	transition: background-color 1s ease, width 1s linear;
+ 	font-family: 'Cormorant', serif;
+ 	color: #504C4C;
+ 	 
+ }
+
+#decouvre:hover{
+	 background-color:rgba(193,174,131,76);
+}
+
+/*-----------------------------Presentation-------------------------------------------------------*/
+
+#presentation{
+	background-image: url(http://www.template29.axeleroweb.it/uploads/vetrine/00008280/promo/of3.jpg);
+	background-position: center;
+    background-repeat: no-repeat;
+   	background-size: cover;
+    z-index: 0;
+    margin: 0;
+	flex: 1 0 auto;
+	min-height: 100vh;
+	
+}
+
+#presentationSujet{
+	padding: 1vw;
+	background-color: rgb(255, 255, 255, 100);
+	opacity: 0.6;
+    margin-left: 57vw;
+    margin-right: 2vw;
+    margin-top: 2.2vw;
+    z-index: 1;
+}
+	
+#presentationSujet section{
+	color: black;
+	margin: auto;
+	margin-top: 4vw;
+}
+
+#presentation #logo img{
+	width: 10vw;
+}
+
+/*-------------contour paragraphes--------------------*/
+.box
+{
+  
+  margin: 0 auto;
+  padding: 2px;
+  background-color: #9B8972; 
+  /* Single pixel data uri image http://jsfiddle.net/LPxrT/ 
+  /* background-image: gold, gold, white */
+  background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAOqrAP///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='),  url('data:image/gif;base64,R0lGODlhAQABAPAAAOqrAP///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='),
+url('data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==');
+  background-repeat: no-repeat;
+  background-size: 0 2px, 0 100%, 0% 2px;
+  background-position: top center, top center, bottom center;
+  -webkit-animation: drawBorderFromCenter 4s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes drawBorderFromCenter {
+    0% {
+      background-size: 0 2px, 0 0, 100% 100%;
+    }
+    20% {
+      background-size: 100% 2px, 100% 0, 100% 100%;
+    }
+    66%
+    {
+      background-size: 100% 2px, 100% 98%, 100% 100%;
+    }
+    99%
+    {
+      background-size: 100% 2px, 100% 98%, 0 2px;
+    }
+}
+
+
+
+.content
+{
+  background: white;
+  padding: 5em;
+  text-align: center;
+  text-transform: uppercase;
+}
+/*-----------------------profil------------------*/
+#fond video{
+  	position: fixed; 
+  	right: 0; 
+  	bottom: 0;
+ 	min-width: 100%; 
+ 	min-height: 100vh;
+  	width: auto; 
+  	height: auto; 
+  	z-index: -1;
+ 	background: url(polina.jpg) no-repeat;
+ 	background-size: cover;
+}
+
+#profil #logo img{
+	width: 10vw;
+}
+
+#userUpdate{
+	padding: 1vw;
+	background-color: rgb(255, 255, 255, 100);
+	opacity: 0.7;
+    margin-left: 43vw;
+    margin-right: 30vw;
+    margin-top: 5vw;
+   
+}
+
+#userUpdate #nom{
+	
+	margin:1vw;
+}
+
+#userUpdate #motdepasse{
+	
+	margin-top: 2vw;
+}
+
+#userUpdate #miseajour{
+	text-align: right;
+}
+
+h1{
+	font-family: 'Cormorant', serif;
+	color: black;
+	text-align: center;
+}
+
+/*---------------registration--------------------*/
+#inscrip #logo img{
+	width:10vw;
+}
+/*---------Registration Form-------------------*/
+
+#inscription{
+	padding: 1vw;
+	background-color: rgb(255, 255, 255, 100);
+	opacity: 0.7;
+    zoom: 1;
+    margin-left: 40vw;
+    margin-right: 40vw;
+    margin-top: 10vw;
+
+}
+
+#inscription input{
+	margin:1vw;
+}
+
+.boutonI{
+	border: #D6C5A3 solid 1px;
+	cursor:pointer;
+	background-color: rgba(0,0,0,0);
+	color: #968686;
+	font-size:24px;
+	padding-top:22px;
+	padding-bottom:22px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+  	margin-top:-4px;
+  	font-weight:400; 
+ }
+
+ #inscription .boutonI{
+ 	margin-left: 38%;
+ }
+
+ 
+ #inscrip h1{
+ 	font-family: 'Playfair Display', serif;
+ 	margin-bottom: -5vw;
+ }
+
+/*--------page registration button-------------*/
+ #btnInscript{
+ 	background-color: rgba(0,0,0,0);;
+ 	cursor:pointer;
+ 	opacity: 0.7;
+ 	position: absolute;
+	/*float: right;*/
+	top: 4%;
+	/*left: 80%;*/
+	/*transform: translate(-50%, -50%);*/
+	font-size: 1.2vw;
+ 	transition: background-color 1s ease, width 1s linear;
+ 	font-family: 'Cormorant', serif;
+ 	color: #504C4C;
+ 	margin-left: 1.5vw;
+ }
+
+#btnInscript:hover{
+	background-color:rgba(193,174,131,76);
+}
+
+#inscription form{
+	text-align: center;
+}
+
+
+/*--------------------------Tutos-------------------------------------*/
+#tuto{
+	
+	background-image: url(http://www.domaine-de-bellevue.net/wp-content/uploads/2017/09/herbes-aromatiques-citron-sel-fleur-torchon-bois-planche-thegem-blog-default.jpg);
+	background-position: center;
+    background-repeat: no-repeat;
+   	background-size: cover;
+    z-index: 0;
+    margin: 0;
+	flex: 1 0 auto;
+	min-height: 100vh;
+}
+/*--------------- category section----------------*/
+#tuto section {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-content: center;
+	margin-top: 7.3vw;
+}
+#tuto img {
+	width: 12vw;
+	padding: 0.1vw;
+	z-index: 1;
+
+}
+#tuto article {
+	position: relative;
+	width: 12vw;
+	margin-top: 2vw;
+}
+#tuto article span {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font-size: 2vw;
+	text-align: center;
+	width: 12vw;
+	color: white;
+	padding: 1vw 0;
+	background-color: rgba(0,0,0,0.5);
+	padding: 0.1vw;
+}
+/*--------------------------------------*/
+
+#tuto #logo img{
+	width: 10vw;
+}
+/*-----------------------------------*/
+
+/*.btn1 {
+	
+	margin-left: 2vw;
+	opacity: 0.7;
+	width: 20vw;
+}
+*/
+.btn1 input:hover{
+	
+	cursor:pointer;
+	background-color: rgba(0,0,0,0.2);
+	color: black;
+	font-size:1.5vw;
+	padding-top:5px;
+	padding-bottom:10px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+  	margin-top:-4px;
+  	font-weight:700;
+  	text-align: center;
+  	font-family: 'Cormorant', serif;
+}
+.btn1 input{
+	width: 10vw;
+    height: 3vw;
+    font-family: 'Cormorant', serif;
+    font-size: 1vw;
+
+}
+
+#formulaire_tutos{
+	padding: 1vw;
+	background-color: rgb(255, 255, 255, 1.4);
+	opacity: 0.84;
+    zoom: 1;
+    margin-left: 34vw;
+    width: 24vw;
+    margin-top: 5vw;
+}
+
+#choixCat{
+	width: 17vw;
+	height: 2vw;
+	font-family: 'Cormorant', serif;
+	margin-bottom: 0.5vw;
+	left: 1%;
+
+}
+
+#caseNom{
+	height:1.1vw;
+	margin-bottom: 0.5vw;
+
+}
+#caseDescription{
+	height:1.1vw;
+}
+
+/*#tuto h1{
+	margin-top: 4vw;
+	text-align: left;
+}*/
+
+#titre_tuto{
+	
+	position: absolute;
+    right: 8%;
+    margin-top: 7%;
+    font-size: 4vw;
+}
+
+
+
+#buttonCreerTutos{
+	width: 92%;
+	margin-top: 1vw;
+	margin-left: 2vw;
+	opacity: 0.7;
+}
+
+#buttonImage{
+	height: 1.1vw;
+	margin-top: 0.3vw;
+}
+
+/*#form_tuto1{
+	padding: 1vw;
+	background-color: rgb(255, 255, 255, 1.4);
+	opacity: 0.7;
+    zoom: 1;
+    margin-left: 34vw;
+    width: 24vw;
+
+}
+
+#form_tuto1 form{
+	display: flex;
+	flex-direction: column;
+
+}
+
+#form_tuto1 input {
+	margin-bottom: 2vw;
+	margin-top: 2vw;
+	font-family: 'Cormorant', serif;
+
+}*/
+
+#tutosAdd{
+	background-position: center;
+    background-repeat: no-repeat;
+   	background-size: cover;
+    z-index: 0;
+    margin: 0;
+	flex: 1 0 auto;
+	min-height: 100vh;
+	background-image: url(https://assets.afcdn.com/story/20190716/2016186_w767h767c1cx2507cy3971cxt0cyt0cxb4680cyb6595.jpg);
+}
+
+
+#addTutos{
+	background-image: url(https://amurshoes.ru/assets/3db-maska-iz-moloka-i-zhelatina73db41.jpg);
+	min-height: 100vh;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+#tutoDesc{
+	margin-top:13vw;
+}
+
+#formEtapes form{
+	padding: 1vw;
+	background-color: rgb(255, 255, 255, 100);
+	opacity: 0.7;
+    margin-left: 30vw;
+    margin-right: 30vw;
+    margin-top: 7vw;
+
+}
+
+#formEtapes{
+	position: absolute;
+	top:50%;
+	left:40%;
+}
+
+
+/*-------------Ingredients-------------------------------------------------*/
+#ingredients{
+
+	min-height: 100vh;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+	background-image: url(https://cache.marieclaire.fr/data/photo/w1000_ci/1bj/cosmetique-bio.jpg);
+}
+
+#ingredient_miel{
+	padding: 1vw;
+	background-color: rgb(255, 255, 255, 100);
+	opacity: 0.7;
+    margin-left: 34vw;
+    margin-top: 14vw;
+    font-family: 'Cormorant', serif;
+}
+
+#ingredient_miel section{
+
+	color: black;
+	margin: auto;
+	font-family: 'Cormorant', serif;
+	font-size: 1vw;
+
+}
+
+#ingredients #logo img{
+	width: 10vw;
+}
+
+
+/*-----------------Mode d'emploi---------------------------------*/
+
+#mode_emploi{
+	background-image: url(https://documents.lne.fr/fr/actualites/lettres-information/images/cosmetiques.jpg) ;
+	background-position: center;
+    background-repeat: no-repeat;
+   	background-size: cover;
+    z-index: 0;
+    margin: 0;
+	flex: 1 0 auto;
+	min-height: 100vh;
+	
+
+
+}
+
+#mode_emploiRecettes{
+	padding: 1vw;
+	background-color: rgb(255, 255, 255, 100);
+	opacity: 0.7;
+    margin-left: 35vw;
+    margin-top: 8vw;
+}
+
+#mode_emploi #logo img{
+	width: 10vw;
+}
+#mode_emploiRecettes section{
+	margin-top: 5vw;
+}
+
+/*-------------------A propos-----------------*/
+#a_propos{
+	background-image: url(http://www.healthyandco.fr/wp-content/uploads/2016/07/Peaux-mixtes-produits-blancs.jpg) ;
+	min-height: 100vh;
+	background-position: center;
+    background-repeat: no-repeat;
+   	background-size: cover;
+    z-index: 0;
+    margin: 0;
+	flex: 1 0 auto;
+}
+
+#a_propos #logo img{
+	width: 10vw;
+}
+
+#a_proposTex{
+	padding: 1vw;
+	background-color: rgb(255, 255, 255, 100);
+	opacity: 0.7;
+    margin-left: 3vw;
+	margin-right:3vw;
+	margin-top: 12vw;
+}
+
+#a_proposTex section{
+	margin-top: 5vw;
+}
+
+/*-----------------Contact--------------------*/
+/*#contact{
+
+	background-image: url(https://sf2.viepratique.fr/wp-content/uploads/sites/5/2018/05/cosmetique-bio-vrai-faux-17-750x410.jpg) ;
+ 	background-position: center;
+    background-repeat: no-repeat;
+   	background-size: cover;
+    z-index: 0;
+    margin: 0;
+	flex: 1 0 auto;
+	min-height: 100vh;
+
+}
+#contact #logo img{
+	width: 10vw;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+#feedback-page{
+	text-align:center;
+}
+
+#form-main{
+	width:100%;
+	float:left;
+	padding-top:0px;
+	margin: none;
+}
+
+#form-div {
+	background-color:rgba(72,72,72,0.4);
+	padding-left:4vw;
+	padding-right:4vw;
+	padding-top:2vw;
+	padding-bottom: 2vw;
+	width: 22vw;
+	display: flex;
+	justify-content: center;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+	margin-left: 17vw;
+	margin-top: 8vw;
+
+
+
+}
+
+/*---------------------------------*/
+
+/*----------------------------------*/
+
+/*.feedback-input {
+	color:#3c3c3c;
+	font-family: Helvetica, Arial, sans-serif;
+    font-weight:500;
+	font-size: 18px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #fbfbfb;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 10px;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+    border: 3px solid rgba(0,0,0,0);
+}
+
+.feedback-input:focus{
+	background: #fff;
+	box-shadow: 0;
+	border: 3px solid #968686;
+	color: #968686;
+	outline: none;
+    padding: 13px 13px 13px 54px;
+}
+
+.focused{
+	color:#30aed6;
+	border:#30aed6 solid 3px;
+}
+
+/* Icons ---------------------------------- */
+/*#name{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#name:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 8px 5px;
+    background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+    background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#comment{
+	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color:white;
+}
+
+#button-blue{
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	float:left;
+	width: 100%;
+	border: black #fbfbfb solid 4px;
+	cursor:pointer;
+	background-color: #968686;
+	color:white;
+	font-size:24px;
+	padding-top:22px;
+	padding-bottom:22px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+  	margin-top:-4px;
+  	font-weight:700;
+}
+
+#button-blue:hover{
+	background-color: rgba(0,0,0,0);
+	color: #968686;
+}
+	
+.submit:hover {
+	color: #3498db;
+}
+	
+.ease {
+
+	height: 74px;
+	background-color: #fbfbfb;
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-o-transition: .3s ease;
+	-ms-transition: .3s ease;
+	transition: .3s ease;
+}
+
+.submit:hover .ease{
+  width:100%;
+  background-color:white;
+}
+
+@media only screen and (max-width: 580px) {
+	#form-div{
+		left: 3%;
+		margin-right: 3%;
+		width: 88%;
+		margin-left: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
+
+/*------------------Catégories----------------------*/
+#fond{
+	min-height: 100%;
+}
+
+/*------------------------------------------------*/
+
+#scroll_to_top{
+		
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        margin-top: 50px;
+
+
+}
+
+/*--------------------------------------------*/
+
+footer {
+	background-color:black!important;
+	position:relative;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+	padding: 2vw 0;
+}
+footer>div {
+	width: 30%;
+	margin:0;
+	padding: 0 1vw;
+}
+footer>div>a{
+	display:block;
+	padding: 1.5vw 1vw;
+}
+
+div.lft{
+
+text-align:left;
+}
+div.rgt{
+
+text-align:right;
+}
+div a{
+color:#666;
+text-decoration:none;
+position:relative;
+padding:25px 0;
+}
+div a:hover{
+color:white;
+}
+/*GROUPING CLASSES*/
+div.lft a:after, div.rgt a:after{
+position:absolute;
+content:"";
+right:0;
+bottom:0;
+width:0%;
+height:1px;
+background:#fff;
+}
+div.lft a:after{
+left:0;
+}
+/*LEFT SIDE EFFECTS*/
+div.lft a:before{
+position:absolute;
+content:"";
+left:0;
+bottom:0;
+width:100%;
+height:1px;
+background:rgb(125,126,125);
+/* Old browsers */
+background:-webkit-gradient(linear,left top,right top,color-stop(rgba(125,126,125,1),0),color-stop(rgba(14,14,14,1),1));
+background:-webkit-linear-gradient(left,  rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%);
+background:   -moz-linear-gradient(left,  rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%);
+background:     -o-linear-gradient(left,  rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%);
+background:        linear-gradient(left,  rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%);
+/* FF3.6+ */
+background:-webkit-gradient(linear, left top, right top, color-stop(0%,rgba(125,126,125,1)), color-stop(100%,rgba(14,14,14,1)));
+/* Chrome,Safari4+ */
+background:-webkit-linear-gradient(left,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%);
+background:   -moz-linear-gradient(left,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%);
+background:     -o-linear-gradient(left,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%);
+background:        linear-gradient(left,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%);
+/* Chrome10+,Safari5.1+ */
+/* Opera 11.10+ */
+/* IE10+ */
+background:-webkit-gradient(linear,left top,left bottom,color-stop(rgba(125,126,125,1),0),color-stop(rgba(14,14,14,1),1));
+/*@@prefixmycss->No equivalent*/
+background:-webkit-linear-gradient(to right,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%);
+background:   -moz-linear-gradient(to right,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%);
+background:     -o-linear-gradient(to right,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%);
+background:        linear-gradient(to right,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%);
+/* W3C */
+filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=1 );
+/* IE6-9 */
+:;
+}
+div.lft a:hover:after{
+-webkit-animation:lftani 0.3s linear alternate;
+   /*-moz-animation:lftani 0.3s linear alternate;*/
+    -ms-animation:lftani 0.3s linear alternate;
+     -o-animation:lftani 0.3s linear alternate;
+        animation:lftani 0.3s linear alternate;
+}
+@-webkit-keyframes lftani{
+0% {width:1%;left:0;height:1px;}
+  25% {width:20%;left:10%;height:1px;}
+  50% {width:20%;left:50%;height:1px;}
+  75% {width:20%;left:75%;height:2px;}
+  95% {width:20%;left:100%;height:3px;}
+  100% {width:0%;left:100%;height:4px;}
+}
+/*RIGHT SIDE EFFECTS*/
+div.rgt a:after{
+right:0;
+}
+div.rgt a:before{
+position:absolute;
+content:"";
+left:0;
+bottom:0;
+width:100%;
+height:1px;
+background:rgb(14,14,14);
+/* Old browsers */
+background:-webkit-gradient(linear,left top,right top,color-stop(rgba(14,14,14,1),0),color-stop(rgba(125,126,125,1),1));
+background:-webkit-linear-gradient(left,  rgba(14,14,14,1) 0%, rgba(125,126,125,1) 100%);
+background:   -moz-linear-gradient(left,  rgba(14,14,14,1) 0%, rgba(125,126,125,1) 100%);
+background:     -o-linear-gradient(left,  rgba(14,14,14,1) 0%, rgba(125,126,125,1) 100%);
+background:        linear-gradient(left,  rgba(14,14,14,1) 0%, rgba(125,126,125,1) 100%);
+/* FF3.6+ */
+background:-webkit-gradient(linear, left top, right top, color-stop(0%,rgba(14,14,14,1)), color-stop(100%,rgba(125,126,125,1)));
+/* Chrome,Safari4+ */
+background:-webkit-linear-gradient(left,  rgba(14,14,14,1) 0%,rgba(125,126,125,1) 100%);
+background:   -moz-linear-gradient(left,  rgba(14,14,14,1) 0%,rgba(125,126,125,1) 100%);
+background:     -o-linear-gradient(left,  rgba(14,14,14,1) 0%,rgba(125,126,125,1) 100%);
+background:        linear-gradient(left,  rgba(14,14,14,1) 0%,rgba(125,126,125,1) 100%);
+/* Chrome10+,Safari5.1+ */
+/* Opera 11.10+ */
+/* IE10+ */
+background:-webkit-gradient(linear,left top,left bottom,color-stop(rgba(14,14,14,1),0),color-stop(rgba(125,126,125,1),1));
+/*@@prefixmycss->No equivalent*/
+background:-webkit-linear-gradient(to right,  rgba(14,14,14,1) 0%,rgba(125,126,125,1) 100%);
+background:   -moz-linear-gradient(to right,  rgba(14,14,14,1) 0%,rgba(125,126,125,1) 100%);
+background:     -o-linear-gradient(to right,  rgba(14,14,14,1) 0%,rgba(125,126,125,1) 100%);
+background:        linear-gradient(to right,  rgba(14,14,14,1) 0%,rgba(125,126,125,1) 100%);
+/* W3C */
+filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e0e0e', endColorstr='#7d7e7d',GradientType=1 );
+/* IE6-9 */
+:;
+}
+div.rgt a:hover:after{
+-webkit-animation:rgtani 0.3s linear alternate;
+   -moz-animation:rgtani 0.3s linear alternate;
+    -ms-animation:rgtani 0.3s linear alternate;
+     -o-animation:rgtani 0.3s linear alternate;
+        animation:rgtani 0.3s linear alternate;
+}
+@-webkit-keyframes rgtani{
+0% {width:1%;right:0;height:1px;}
+  25% {width:20%;right:10%;height:1px;}
+  50% {width:20%;right:50%;height:1px;}
+  75% {width:20%;right:75%;height:2px;}
+  95% {width:20%;right:100%;height:3px;}
+  100% {width:0%;right:100%;height:4px;}
+}
+/*AVATAR*/
+#avatar{
+position:absolute;
+margin:auto;
+width:200px;
+height:200px;
+/*background:url(../img/logo_transp.png);*/
+background-repeat:no-repeat;
+-webkit-background-size:/*@@prefixmycss->No equivalent*/;
+   -moz-background-size:cover;
+     -o-background-size:/*@@prefixmycss->No equivalent*/;
+        background-size:cover;
+overflow:hidden;
+background-color:#000;
+top:240px;
+right:0;
+bottom:0;
+left:0;
+z-index:0;
+-webkit-border-radius:50%;
+   -moz-border-radius:50%;
+        border-radius:50%;
+/*border:5px solid #cd6a51;
+-webkit-transition:all 0.5s ease;
+   -moz-transition:all 0.5s ease;
+     -o-transition:all 0.5s ease;
+        transition:all 0.5s ease;*/
+  opacity:0.5;
+}
+footer:hover #avatar{
+width:210px;
+height:210px;
+/*border:5px solid #cd6a51;*/
+opacity:1;
+/*background:url(https://cdn.shopify.com/s/files/1/0269/7167/products/logo-tan-3_large.jpg?v=1381411178);*/
+background-repeat:no-repeat;
+-webkit-background-size:/*@@prefixmycss->No equivalent*/;
+   -moz-background-size:cover;
+     -o-background-size:/*@@prefixmycss->No equivalent*/;
+        background-size:cover;
+-webkit-background-clip:content-box;
+   -moz-background-clip:content;
+        background-clip:content-box;
+}
+
+/*---------------------essai1 formulaire steps------------------------------------*/
+/* Style the form */
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+/* Style the input fields */
+/*input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+/*input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}
+
+/*----------------------------------------------
